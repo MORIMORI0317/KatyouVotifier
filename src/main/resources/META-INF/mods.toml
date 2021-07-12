@@ -1,0 +1,12 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="LGPL v3"
+[[mods]]
+modId="katyouvotifier"
+version="${file.jarVersion}"
+displayName="Katyou Votifier"
+credits="TeamFelNull"
+authors="MORIMORI0317"
+description='''
+A simple port of NuVotifier to Forge
+'''
