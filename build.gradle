@@ -13,7 +13,7 @@ apply plugin: 'maven-publish'
 
 version = '1.0'
 group = 'red.felnull.katyouvotifier'
-archivesBaseName = 'KatyouVotifier'
+archivesBaseName = 'KatyouVotifier-1.16.5'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
