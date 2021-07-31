@@ -1,5 +1,6 @@
 package red.felnull.katyouvotifier.handler;
 
+import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
@@ -7,6 +8,7 @@ import net.minecraftforge.fml.event.server.FMLServerStoppingEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import red.felnull.katyouvotifier.KatyouVotifier;
+import red.felnull.katyouvotifier.command.KVReloadCommand;
 import red.felnull.katyouvotifier.util.ServerUtils;
 
 import java.util.HashMap;
@@ -61,4 +63,10 @@ public class ServerHandler {
             }
         });
     }
+
+    @SubscribeEvent
+    public static void onCommandRegister(RegisterCommandsEvent e) {
+        KVReloadCommand.register(e.getDispatcher());
+    }
+
 }
